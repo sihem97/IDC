@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Invasive Ductal carcinoma</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Code to prevent the browser from caching the page-->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+
+
+<!--CSS Stylesheets-->
+<link rel="stylesheet" href="C:\Users\DELL\Desktop\try\static\design1.css">
+<link rel="stylesheet" href="C:\Users\DELL\Desktop\try\static\design2.css">
+
+<!--Link to Font Awesome icons-->
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css' integrity='sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns' crossorigin='anonymous'>
+
+<!--Link to fonts from google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+
+
+<style>
+html,body,h2,h3,h4 {font-family: Helvetica, sans-serif}
+</style>
+
+
+</head>
+
+
+<body class="w3-black">
+
+
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content. -->
+<div class="w3-content card" style="max-width:960px">
+
+
+
+<!-- 1. HOME PAGE TAB -->
+<div class="tabbed w3-animate-opacity w3-white" id="home">
+
+
+
+<!-- Header -->
+<div class="w3-center title adjust-fontcolor logo">
+	
+  <h1 class="space-letters w3-text-gray"><i class='fas fa-briefcase-medical w3-padding w3-text-teal' style='font-size:40px'></i><b>Invasive Ductal Carcinoma Detector</b></h1>
+  
+</div>
+
+
+
+
+<!-- Front page image -->
+<!-- This image will be replaced once the js code runs. -->
+<div class="w3-center">
+	<img id="selected-image" class="w3-round adjust-image" width="200" src="C:\Users\DELL\Desktop\try\static\image\front_image.png" alt=""> 
+</div> 
+
+
+<p id="demo_name"></p>
+<p id="demo_list"></p>
+
+
+<div class="dont-break-out w3-center add-padding w3-border add-margin side-margin w3-round w3-white">
+		
+	<h5 class='new-font'>Predictions</h5>
+	<ol class='w3-left-align' id='prediction-list'></ol>
+		
+</div>
+
+
+<!-- Button -->
+<div id="btnn" class="w3-center bottom-padding">
+	
+	<button class="w3-btn w3-grey w3-round w3-margin-bottom adjust-spacing w3-hover-white btn-font w3-padding w3-space-letters w3-card-4" onclick="setTimeout(simulateClick.bind(null, 'image-selector'), 200)"><i class='fas fa-camera w3-padding-right' style='font-size:15px'></i><b>Submit Images</b></button>
+
+</div> 
+
+</div><!--END OF HOME PAGE TAB-->
+
+
+
+<!-- We simulate clicks on these two. -->
+<div class="hide">
+	<button id='predict-button'>Predict</button>
+</div>
+
+<!-- This is here because it makes it easier to style the button above.-->
+<div class="hide">
+	<input id="image-selector" type="file" multiple>
+</div>
+<!--===================================-->
+
+
+	<!-- Load jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+	</script>
+	
+	<!-- Load TensorFlow.js -->
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.3/dist/tf.min.js"> 
+	</script>
+	
+	
+	<!-- Load the Javascript code -->
+	<script src="C:\Users\DELL\Desktop\try\static\classes.js"></script>
+	<script src="C:\Users\DELL\Desktop\try\static\loader.js"></script>
+	<script src="C:\Users\DELL\Desktop\try\static\detector.js"></script>
+	<script src="C:\Users\DELL\Desktop\projet\local-server\server.js"></script>	
+	
+	
+	
+	
+</div> <!-- w3-content -->
+
+</body>
+</html>

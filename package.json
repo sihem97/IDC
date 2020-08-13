@@ -1,0 +1,10 @@
+{
+  "name": "projet",
+  "version": "1.0.0",
+  "dependecies": {
+    "express": "latest"
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  }
+}
